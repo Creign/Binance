@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42552EB2E13C44E35B62C10C /* Pods_Binance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E0752C3537B1E34B4D6C87 /* Pods_Binance.framework */; };
+		4AE73E6826C4938000A99A65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE73E6726C4938000A99A65 /* AppDelegate.swift */; };
+		4AE73E7126C4938100A99A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE73E7026C4938100A99A65 /* Assets.xcassets */; };
+		4AE73E7426C4938100A99A65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE73E7226C4938100A99A65 /* LaunchScreen.storyboard */; };
+		4AE899CE26C4953100714E46 /* OrderBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE899CC26C4953100714E46 /* OrderBookViewController.swift */; };
+		4AE899CF26C4953100714E46 /* OrderBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE899CD26C4953100714E46 /* OrderBookViewController.xib */; };
+		4AE899D226C4956100714E46 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE899D026C4956100714E46 /* MainViewController.swift */; };
+		4AE899D326C4956100714E46 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE899D126C4956100714E46 /* MainViewController.xib */; };
+		4AE899D626C49A8E00714E46 /* MarketTradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE899D426C49A8E00714E46 /* MarketTradesViewController.swift */; };
+		4AE899D726C49A8E00714E46 /* MarketTradesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE899D526C49A8E00714E46 /* MarketTradesViewController.xib */; };
+		4AE899DB26C49F8B00714E46 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE899D926C49F8B00714E46 /* InfoViewController.swift */; };
+		4AE899DC26C49F8B00714E46 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE899DA26C49F8B00714E46 /* InfoViewController.xib */; };
+		4AE899DF26C86EFE00714E46 /* OrderBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE899DE26C86EFE00714E46 /* OrderBookModel.swift */; };
+		4AE899E226C875EC00714E46 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE899E126C875EC00714E46 /* Double+Extensions.swift */; };
+		4AE899E526C87AB900714E46 /* OrderBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE899E326C87AB900714E46 /* OrderBookTableViewCell.swift */; };
+		4AE899E626C87AB900714E46 /* OrderBookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE899E426C87AB900714E46 /* OrderBookTableViewCell.xib */; };
+		4AE899E826C88EC400714E46 /* MarketTradeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE899E726C88EC400714E46 /* MarketTradeModel.swift */; };
+		4AE899EB26C8929D00714E46 /* MarketTradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE899E926C8929D00714E46 /* MarketTradeTableViewCell.swift */; };
+		4AE899EC26C8929D00714E46 /* MarketTradeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE899EA26C8929D00714E46 /* MarketTradeTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24E0752C3537B1E34B4D6C87 /* Pods_Binance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE73E6426C4938000A99A65 /* Binance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Binance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE73E6726C4938000A99A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4AE73E7026C4938100A99A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AE73E7326C4938100A99A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AE73E7526C4938100A99A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE899CC26C4953100714E46 /* OrderBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookViewController.swift; sourceTree = "<group>"; };
+		4AE899CD26C4953100714E46 /* OrderBookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderBookViewController.xib; sourceTree = "<group>"; };
+		4AE899D026C4956100714E46 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4AE899D126C4956100714E46 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		4AE899D426C49A8E00714E46 /* MarketTradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTradesViewController.swift; sourceTree = "<group>"; };
+		4AE899D526C49A8E00714E46 /* MarketTradesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketTradesViewController.xib; sourceTree = "<group>"; };
+		4AE899D926C49F8B00714E46 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		4AE899DA26C49F8B00714E46 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		4AE899DE26C86EFE00714E46 /* OrderBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookModel.swift; sourceTree = "<group>"; };
+		4AE899E126C875EC00714E46 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		4AE899E326C87AB900714E46 /* OrderBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookTableViewCell.swift; sourceTree = "<group>"; };
+		4AE899E426C87AB900714E46 /* OrderBookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderBookTableViewCell.xib; sourceTree = "<group>"; };
+		4AE899E726C88EC400714E46 /* MarketTradeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTradeModel.swift; sourceTree = "<group>"; };
+		4AE899E926C8929D00714E46 /* MarketTradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTradeTableViewCell.swift; sourceTree = "<group>"; };
+		4AE899EA26C8929D00714E46 /* MarketTradeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketTradeTableViewCell.xib; sourceTree = "<group>"; };
+		5DE21B28A5D975BF91A990E9 /* Pods-Binance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binance.release.xcconfig"; path = "Target Support Files/Pods-Binance/Pods-Binance.release.xcconfig"; sourceTree = "<group>"; };
+		F5E8ECFC933D62A6BB5E31CD /* Pods-Binance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binance.debug.xcconfig"; path = "Target Support Files/Pods-Binance/Pods-Binance.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AE73E6126C4938000A99A65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42552EB2E13C44E35B62C10C /* Pods_Binance.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02F95DCB5792F4213D1CBDA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24E0752C3537B1E34B4D6C87 /* Pods_Binance.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AE73E5B26C4938000A99A65 = {
+			isa = PBXGroup;
+			children = (
+				4AE73E6626C4938000A99A65 /* Binance */,
+				4AE73E6526C4938000A99A65 /* Products */,
+				54FBC5BB8077BE905572023F /* Pods */,
+				02F95DCB5792F4213D1CBDA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4AE73E6526C4938000A99A65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AE73E6426C4938000A99A65 /* Binance.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AE73E6626C4938000A99A65 /* Binance */ = {
+			isa = PBXGroup;
+			children = (
+				4AE899E026C875DC00714E46 /* Extensions */,
+				4AE899DD26C86EDB00714E46 /* Models */,
+				4AE899C926C494D700714E46 /* Features */,
+				4AE73E6726C4938000A99A65 /* AppDelegate.swift */,
+				4AE73E7026C4938100A99A65 /* Assets.xcassets */,
+				4AE73E7226C4938100A99A65 /* LaunchScreen.storyboard */,
+				4AE73E7526C4938100A99A65 /* Info.plist */,
+			);
+			path = Binance;
+			sourceTree = "<group>";
+		};
+		4AE899C926C494D700714E46 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				4AE899ED26C8A12C00714E46 /* Main */,
+				4AE899D826C49F7600714E46 /* Info */,
+				4AE899CB26C4950700714E46 /* MarketTrades */,
+				4AE899CA26C494F500714E46 /* OrderBook */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		4AE899CA26C494F500714E46 /* OrderBook */ = {
+			isa = PBXGroup;
+			children = (
+				4AE899CC26C4953100714E46 /* OrderBookViewController.swift */,
+				4AE899CD26C4953100714E46 /* OrderBookViewController.xib */,
+				4AE899E326C87AB900714E46 /* OrderBookTableViewCell.swift */,
+				4AE899E426C87AB900714E46 /* OrderBookTableViewCell.xib */,
+			);
+			path = OrderBook;
+			sourceTree = "<group>";
+		};
+		4AE899CB26C4950700714E46 /* MarketTrades */ = {
+			isa = PBXGroup;
+			children = (
+				4AE899D426C49A8E00714E46 /* MarketTradesViewController.swift */,
+				4AE899D526C49A8E00714E46 /* MarketTradesViewController.xib */,
+				4AE899E926C8929D00714E46 /* MarketTradeTableViewCell.swift */,
+				4AE899EA26C8929D00714E46 /* MarketTradeTableViewCell.xib */,
+			);
+			path = MarketTrades;
+			sourceTree = "<group>";
+		};
+		4AE899D826C49F7600714E46 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				4AE899D926C49F8B00714E46 /* InfoViewController.swift */,
+				4AE899DA26C49F8B00714E46 /* InfoViewController.xib */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		4AE899DD26C86EDB00714E46 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4AE899DE26C86EFE00714E46 /* OrderBookModel.swift */,
+				4AE899E726C88EC400714E46 /* MarketTradeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4AE899E026C875DC00714E46 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4AE899E126C875EC00714E46 /* Double+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4AE899ED26C8A12C00714E46 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4AE899D026C4956100714E46 /* MainViewController.swift */,
+				4AE899D126C4956100714E46 /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		54FBC5BB8077BE905572023F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5E8ECFC933D62A6BB5E31CD /* Pods-Binance.debug.xcconfig */,
+				5DE21B28A5D975BF91A990E9 /* Pods-Binance.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AE73E6326C4938000A99A65 /* Binance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AE73E7826C4938100A99A65 /* Build configuration list for PBXNativeTarget "Binance" */;
+			buildPhases = (
+				1C3029DD3373B880791F0144 /* [CP] Check Pods Manifest.lock */,
+				4AE73E6026C4938000A99A65 /* Sources */,
+				4AE73E6126C4938000A99A65 /* Frameworks */,
+				4AE73E6226C4938000A99A65 /* Resources */,
+				8CAB2292498337215AAA9609 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Binance;
+			productName = Binance;
+			productReference = 4AE73E6426C4938000A99A65 /* Binance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AE73E5C26C4938000A99A65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					4AE73E6326C4938000A99A65 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 4AE73E5F26C4938000A99A65 /* Build configuration list for PBXProject "Binance" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AE73E5B26C4938000A99A65;
+			productRefGroup = 4AE73E6526C4938000A99A65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AE73E6326C4938000A99A65 /* Binance */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AE73E6226C4938000A99A65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE73E7426C4938100A99A65 /* LaunchScreen.storyboard in Resources */,
+				4AE899E626C87AB900714E46 /* OrderBookTableViewCell.xib in Resources */,
+				4AE73E7126C4938100A99A65 /* Assets.xcassets in Resources */,
+				4AE899D326C4956100714E46 /* MainViewController.xib in Resources */,
+				4AE899EC26C8929D00714E46 /* MarketTradeTableViewCell.xib in Resources */,
+				4AE899D726C49A8E00714E46 /* MarketTradesViewController.xib in Resources */,
+				4AE899CF26C4953100714E46 /* OrderBookViewController.xib in Resources */,
+				4AE899DC26C49F8B00714E46 /* InfoViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C3029DD3373B880791F0144 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Binance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CAB2292498337215AAA9609 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Binance/Pods-Binance-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Binance/Pods-Binance-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Binance/Pods-Binance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AE73E6026C4938000A99A65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE899E526C87AB900714E46 /* OrderBookTableViewCell.swift in Sources */,
+				4AE899E226C875EC00714E46 /* Double+Extensions.swift in Sources */,
+				4AE899DF26C86EFE00714E46 /* OrderBookModel.swift in Sources */,
+				4AE899CE26C4953100714E46 /* OrderBookViewController.swift in Sources */,
+				4AE899EB26C8929D00714E46 /* MarketTradeTableViewCell.swift in Sources */,
+				4AE73E6826C4938000A99A65 /* AppDelegate.swift in Sources */,
+				4AE899E826C88EC400714E46 /* MarketTradeModel.swift in Sources */,
+				4AE899D626C49A8E00714E46 /* MarketTradesViewController.swift in Sources */,
+				4AE899DB26C49F8B00714E46 /* InfoViewController.swift in Sources */,
+				4AE899D226C4956100714E46 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4AE73E7226C4938100A99A65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AE73E7326C4938100A99A65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AE73E7626C4938100A99A65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4AE73E7726C4938100A99A65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AE73E7926C4938100A99A65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E8ECFC933D62A6BB5E31CD /* Pods-Binance.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7JHJ493VMG;
+				INFOPLIST_FILE = Binance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.XeL.Binance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AE73E7A26C4938100A99A65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE21B28A5D975BF91A990E9 /* Pods-Binance.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7JHJ493VMG;
+				INFOPLIST_FILE = Binance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.XeL.Binance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AE73E5F26C4938000A99A65 /* Build configuration list for PBXProject "Binance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE73E7626C4938100A99A65 /* Debug */,
+				4AE73E7726C4938100A99A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AE73E7826C4938100A99A65 /* Build configuration list for PBXNativeTarget "Binance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE73E7926C4938100A99A65 /* Debug */,
+				4AE73E7A26C4938100A99A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AE73E5C26C4938000A99A65 /* Project object */;
+}
